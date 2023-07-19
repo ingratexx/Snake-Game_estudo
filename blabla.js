@@ -34,10 +34,10 @@ const changeDirection = (direction) => {
   if (direction === "up" && velocidadeY !== 1) {
     velocidadeX = 0;
     velocidadeY = -1;
-  } else if (direction === "down" && velocidadeY !== -1) {
+  } else if (direction === "down" && velocidadeY !== 1) {
     velocidadeX = 0;
     velocidadeY = 1;
-  } else if (direction === "left" && velocidadeX !== 1) {
+  } else if (direction === "left" && velocidadeX !== -1) {
     velocidadeX = -1;
     velocidadeY = 0;
   } else if (direction === "right" && velocidadeX !== -1) {
