@@ -6,7 +6,7 @@ const controls = document.querySelectorAll(".controls");
 let gameOver = false;
 let foodX, foodY;
 let snakeX = 5, snakeY = 5;
-let velocidadeX = 1, velocidadeY = -1;
+let velocidadeX = 2, velocidadeY = -2;
 let snakeBody = [];
 let setIntervalid;
 let score = 0;
@@ -20,6 +20,7 @@ const updateFoodPosition = () => {
 };
 
 const handleGameOver = () => {
+  snakeBody.push([snakeBody]);
   clearInterval(setIntervalid);
   alert("GAME OVER! PRESSIONE OK OU JOGAR NOVAMENTE");
   location.reload();

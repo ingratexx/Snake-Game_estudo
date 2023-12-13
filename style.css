@@ -9,12 +9,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
-  background: #1e3b48;
+  background: #000;
+}
+
+.cobrinha {
+  width: 300px;
+  display: grid;
+  justify-content: center;
+  padding: 10px;
 }
 
 .score {
-  color: #05001e;
+  color: #05001e;   
   font-family: 'VT323', monospace;
   font-size: xx-large;
 }
@@ -33,11 +41,11 @@ body {
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  background: #ffffff;
+  background: #E6A376;
 }
 
 .game-details {
-  color: #798ac6;
+  color: #60B37F;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 20px 27px;
@@ -49,36 +57,22 @@ body {
   height: 100%;
   width: 100%;
   display: grid;
-  background: #884b4b;
+  background: #b1ffa4e2;
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 
 .play-board .food {
-  background: #e2ebfd;
+  background: #E54D4B;
 }
 
 .play-board .head {
-  background: #fed06f;
+  background: #60B37F;
 }
 
 .play-board .body {
-  background: #fed06f;
+  background: #60B37F;
 }
 
-.controls {
-  display: none;
-  justify-content: space-between;
-}
-
-.controls i {
-  padding: 25px 0%;
-  text-align: center;
-  font-size: 1.3rem;
-  color: white;
-  width: calc(100% / 4);
-  cursor: pointer;
-  border-right: 1px solid #05151e;
-}
 
 @media screen and (max-width: 800px) {
   .wrapper {
